@@ -1,0 +1,401 @@
+{
+	"30523382": {
+		"className": "Proxy",
+		"data": {
+			"bypassFPForPAC": true,
+			"color": "#f57575",
+			"configUrl": "",
+			"credentials": "U2FsdGVkX1+tf3lvD5TBClW2UUSZAT4AWsCo/i0kU2M=",
+			"cycle": false,
+			"enabled": true,
+			"host": "",
+			"id": "30523382",
+			"ipPatterns": [],
+			"isSocks": false,
+			"name": "Shodan",
+			"notes": "",
+			"notifOnError": true,
+			"notifOnLoad": true,
+			"pac": "",
+			"patterns": [
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "Shodan &lt;3 me",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*shodan.io/*",
+						"whitelist": "Inclusive"
+					}
+				}
+			],
+			"port": "0",
+			"readonly": false,
+			"reloadPAC": false,
+			"reloadPACInterval": "60",
+			"socks": "5",
+			"type": "direct",
+			"useDns": false
+		}
+	},
+	"54294009": {
+		"className": "Proxy",
+		"data": {
+			"bypassFPForPAC": true,
+			"color": "#0055E5",
+			"configUrl": "",
+			"credentials": "U2FsdGVkX1/MNocLAr6e0HYjF2pUjW31lNmtR7WFqNU=",
+			"cycle": false,
+			"enabled": true,
+			"host": "127.0.0.1",
+			"id": "54294009",
+			"ipPatterns": [],
+			"isSocks": false,
+			"name": "Ignore google searches",
+			"notes": "",
+			"notifOnError": true,
+			"notifOnLoad": true,
+			"pac": "",
+			"patterns": [
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "Google",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.google\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "TR",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.google\\.com\\.tr/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "gstatic",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.gstatic\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://google\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://google\\.com\\.tr/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "tag manager",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://googletagmanager\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "translate",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*translate.google.com/*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "Googleapis",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*googleapis.com",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "Ignore my domain",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "bb.flameofignis.com/*",
+						"whitelist": "Inclusive"
+					}
+				}
+			],
+			"port": "8080",
+			"readonly": false,
+			"reloadPAC": false,
+			"reloadPACInterval": "60",
+			"socks": "5",
+			"type": "direct",
+			"useDns": false
+		}
+	},
+	"61287201": {
+		"className": "Proxy",
+		"data": {
+			"bypassFPForPAC": true,
+			"color": "#910000",
+			"configUrl": "",
+			"credentials": "U2FsdGVkX1+GZctV3YYwubCKv/xPImeAxcrAkXN9/Fc=",
+			"cycle": false,
+			"enabled": true,
+			"host": "127.0.0.1",
+			"id": "61287201",
+			"ipPatterns": [],
+			"isSocks": false,
+			"name": "Fuck analytics and beacons",
+			"notes": "",
+			"notifOnError": true,
+			"notifOnLoad": true,
+			"pac": "",
+			"patterns": [
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "analytics",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*google-analytics.com/*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "gvt beacons",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.gvt\\d\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "usercentrics",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*usercentrics.eu/*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "tagmngr",
+						"regex": "",
+						"temp": false,
+						"type": "wildcard",
+						"url": "*googletagmanager.com/*",
+						"whitelist": "Inclusive"
+					}
+				}
+			],
+			"port": "0",
+			"readonly": false,
+			"reloadPAC": false,
+			"reloadPACInterval": "60",
+			"socks": "5",
+			"type": "manual",
+			"useDns": false
+		}
+	},
+	"01753074": {
+		"className": "Proxy",
+		"data": {
+			"bypassFPForPAC": true,
+			"color": "#e3d000",
+			"configUrl": "",
+			"credentials": "U2FsdGVkX1/rb3VfVvHDKVScAScvzQ5rcn1zcodjxWw=",
+			"cycle": false,
+			"enabled": true,
+			"host": "127.0.0.1",
+			"id": "01753074",
+			"ipPatterns": [],
+			"isSocks": false,
+			"name": "Everyone hates adds",
+			"notes": "",
+			"notifOnError": true,
+			"notifOnLoad": true,
+			"pac": "",
+			"patterns": [
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "adservice",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.adservice\\.google\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "adservicetr",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.adservice\\.google\\.com\\.tr/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "dclick",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.doubleclick\\.net/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "syndication",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.googlesyndication\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				},
+				{
+					"className": "ProxyPattern",
+					"data": {
+						"enabled": true,
+						"name": "adservices",
+						"regex": "",
+						"temp": false,
+						"type": "regexp",
+						"url": "https?://.*\\.googleadservices\\.com/.*",
+						"whitelist": "Inclusive"
+					}
+				}
+			],
+			"port": "0",
+			"readonly": false,
+			"reloadPAC": false,
+			"reloadPACInterval": "60",
+			"socks": "5",
+			"type": "manual",
+			"useDns": false
+		}
+	},
+	"default": {
+		"className": "Proxy",
+		"data": {
+			"bypassFPForPAC": false,
+			"color": "#a8a8a8",
+			"configUrl": "",
+			"credentials": "U2FsdGVkX19fIv1kUYSabobJ68zxpYWHLF4l75bGCUs=",
+			"cycle": false,
+			"dns": "",
+			"enabled": true,
+			"host": "127.0.0.1",
+			"id": "default",
+			"ipPatterns": [],
+			"isSocks": false,
+			"login": "",
+			"name": "Default",
+			"notes": "These are the settings that are used when no patterns match an URL",
+			"notifOnError": false,
+			"notifOnLoad": false,
+			"pac": "",
+			"pass": "",
+			"patterns": [],
+			"port": "8080",
+			"readonly": true,
+			"reloadPAC": false,
+			"reloadPACInterval": "60",
+			"socks": "5",
+			"type": "manual",
+			"useDns": false
+		}
+	},
+	"google-analytics.analytics.user-id": "9a4839f3-5ef0-4f7c-8efe-7709b14083b7",
+	"proxyList": [
+		"01753074",
+		"54294009",
+		"61287201",
+		"30523382",
+		"default"
+	],
+	"settings": {
+		"animateIcon": true,
+		"enabledQA": false,
+		"patternNameQA": "Dynamic QuickAdd Pattern",
+		"patternTemplateQA": "*://${3}${6}/*",
+		"patternTemporaryQA": false,
+		"patternTypeQA": "wildcard",
+		"patternWhitelistQA": "Inclusive",
+		"sczd": "{\"archName\":\"x86_64\",\"features\":[\"mmx\",\"sse\",\"sse2\",\"sse3\",\"ssse3\",\"sse4_1\",\"sse4_2\",\"avx\"],\"modelName\":\"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz\",\"numOfProcessors\":12,\"processors\":[{\"usage\":{\"idle\":462759687500,\"kernel\":12015312500,\"total\":480016875000,\"user\":5241875000}},{\"usage\":{\"idle\":471769531250,\"kernel\":1742343750,\"total\":480013437500,\"user\":6501562500}},{\"usage\":{\"idle\":474757968750,\"kernel\":2625937500,\"total\":480013437500,\"user\":2629531250}},{\"usage\":{\"idle\":478528125000,\"kernel\":476718750,\"total\":480013437500,\"user\":1008593750}},{\"usage\":{\"idle\":477722343750,\"kernel\":1023593750,\"total\":480013437500,\"user\":1267500000}},{\"usage\":{\"idle\":465996875000,\"kernel\":1316406250,\"total\":480013437500,\"user\":12700156250}},{\"usage\":{\"idle\":474010156250,\"kernel\":2171875000,\"total\":480013437500,\"user\":3831406250}},{\"usage\":{\"idle\":476819062500,\"kernel\":869687500,\"total\":480013437500,\"user\":2324687500}},{\"usage\":{\"idle\":477573437500,\"kernel\":1088593750,\"total\":480013437500,\"user\":1351406250}},{\"usage\":{\"idle\":471822656250,\"kernel\":1606093750,\"total\":480013281250,\"user\":6584531250}},{\"usage\":{\"idle\":472308906250,\"kernel\":2950468750,\"total\":480013281250,\"user\":4753906250}},{\"usage\":{\"idle\":475844375000,\"kernel\":1659218750,\"total\":480013281250,\"user\":2509687500}}],\"temperatures\":[]}",
+		"showContextMenu": true,
+		"showUpdates": true,
+		"sk": "3f29e529fc91b6fc12ffd2f104345eed",
+		"usageOptOut": false,
+		"useAdvancedMenus": false,
+		"useSyncStorage": false
+	}
+}
